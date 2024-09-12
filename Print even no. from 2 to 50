@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+void Evennumbers(int num){
+    if(num>50){
+        return;
+    }
+    cout<<num<<endl;
+    Evennumbers(num+2);
+}
+int main(){
+    Evennumbers(2);
+    return 0;
+}
