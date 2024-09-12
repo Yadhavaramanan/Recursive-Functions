@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+void numbers(int num){
+    if(num<1){
+        return;
+    }
+    cout<<num<<endl;
+    numbers(num-1);
+}
+int main(){
+    numbers(10);
+    return 0;
+}
