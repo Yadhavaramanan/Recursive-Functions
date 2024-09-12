@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+void printName(int count) {
+    if (count == 0) {
+        return ;  
+    }
+    cout << "Yadhavaramanan" << endl;
+    printName(count - 1);  
+}
+int main() {
+    int size;
+    cout<<"Enter the size:";
+    cin>>size;
+    printName(size);  
+}
